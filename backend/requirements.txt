@@ -3,18 +3,21 @@ uvicorn[standard]
 
 sqlalchemy
 psycopg[binary]
-
+asyncpg
 redis
 
 alembic
 
 pydantic
-pydantic-settings
+
 
 python-dotenv
 
 python-jose[cryptography]
 passlib[bcrypt]
-
+pwdlib[argon2]
+pydantic-settings
+email-validator
 pytest
 httpx
+python-multipart

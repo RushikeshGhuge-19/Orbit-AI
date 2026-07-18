@@ -1,25 +1,57 @@
-# Environment
-.env
-
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
-
-# Virtual environments
-.venv/
-venv/
-
-# Pytest
+*.pyd
+*.so
+*.egg-info/
 .pytest_cache/
+.mypy_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+.env.*
 
 # IDE
 .vscode/
 .idea/
 
-# OS
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
 
 # Logs
 *.log
+
+# Database
+*.db
+*.sqlite3
+
+# Coverage
+.coverage
+htmlcov/
+
+# Docker
+docker-data/
+postgres-data/
+
+# Alembic cache
+alembic/__pycache__/
+
+# Python cache
+**/__pycache__/
+
+# Build
+dist/
+build/
+
+# Temporary
+tmp/
+temp/

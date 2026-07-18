@@ -1,8 +1,8 @@
-from sqlalchemy import create_engine
+from sqlalchemy.ext.asyncio import create_async_engine
 
 from app.core.config import settings
 
-engine = create_engine(
+engine = create_async_engine(
     settings.DATABASE_URL,
     echo=True,
     pool_pre_ping=True,
